@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM rockylinux:9
 LABEL maintainer="vinaypatil253@gmail.com"
 RUN yum install -y httpd \
  zip\
