@@ -3,5 +3,8 @@
   environment:
     KUBECONFIG: /home/ubuntu/.kube/config
   tasks:
-    - name: create new deployment
+    - name: create deployment
       command: kubectl apply -f /home/ubuntu/Deployment.yml
+
+    - name: create service
+      command: kubectl apply -f /home/ubuntu/Service.yml
